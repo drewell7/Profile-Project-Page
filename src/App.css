@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.body {
+    background-color: #333333;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .cityBackHeadPic {
+    
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./../src/assets/img/project9.jpg');
+    
+    height: 800px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
 }
+
+.headBg {
+    display: flex;
+    margin: 10rem;
+    
+    
+    border-radius: 55px;
+    align-items: center;
+    filter: drop-shadow(0 0 2rem #EEF1F2 );
+    justify-content: center;
+    
+    height: 12rem;
+    width: 40rem;
+    
+}
+
+.title {
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 100;
+    font-size: 60px;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+
+  .subtitle {
+    font-family: 'Gruppo', cursive;
+    color: white;
+    line-height: .5rem;
+    font-size: 40px;
+  }
+
+
+
+.bioSection {
+    height: 1200px;
+    margin-top: 250px;
+    color: white;
+}
+
+.family-image {
+    justify-content: center;
+    box-shadow: 52px 52px 1px 1px #151f20;
+}
+
+.about {
+  font-size: 40px;
+  
+}
+
+.description {
+  font-size: 20px;
+  
+}
+
+.certCardSection {
+  margin: 5rem;
+  height: 500px;
+  background-image: url('./../src/assets/img/black-background.jpg');
+  transform: rotateZ(200deg) translateY(4rem) translateX(-5rem);
+  zoom: 200%;
+}
+
+
+
