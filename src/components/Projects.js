@@ -1,87 +1,99 @@
-import { CardGroup, Card, CardImg, CardBody, CardTitle, CardSubtitle, CardText, Button } from 'reactstrap';
+import { Container, Row, Col, Card, CardBody, CardTitle,  } from 'reactstrap';
+import bootstrapSite from '../assets/img/BootcampSite.png';
+import ReactNucampSite from '../assets/img/ReactNuCampSite.png';
 
 const Projects = () => {
     return (
-        <div>
-            <CardGroup>
-            <Card>
-                <CardImg
-                alt="Card image cap"
-                src="https://picsum.photos/318/180"
-                top
-                width="100%"
-                />
-                <CardBody>
-                <CardTitle tag="h5">
-                    Card title
-                </CardTitle>
-                <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
+        <div className='projects'>
+            <div className="section blogs-2" id="blogs-2">
+          <Container fluid>
+            <h2 className="projectsTitle">Projects</h2>
+            <br />
+            <Row>
+              <Col lg="3">
+                <Card
+                  className="card-blog card-background"
+                  data-animation="zooming"
                 >
-                    Card subtitle
-                </CardSubtitle>
-                <CardText>
-                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-                </CardText>
-                <Button>
-                    Button
-                </Button>
-                </CardBody>
-            </Card>
-            <Card>
-                <CardImg
-                alt="Card image cap"
-                src="https://picsum.photos/318/180"
-                top
-                width="100%"
-                />
-                <CardBody>
-                <CardTitle tag="h5">
-                    Card title
-                </CardTitle>
-                <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
+                  <div
+                    className="full-background"
+                    style={{ backgroundImage: `url(${ReactNucampSite})`}}
+                    
+                  />
+                  <CardBody>
+                    <div className="content-bottom">
+                      
+                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                        <CardTitle tag="h3">AI at the Edge</CardTitle>
+                      </a>
+                    </div>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col lg="3">
+                <Card
+                  className="card-blog card-background"
+                  data-animation="zooming"
                 >
-                    Card subtitle
-                </CardSubtitle>
-                <CardText>
-                    This card has supporting text below as a natural lead-in to additional content.
-                </CardText>
-                <Button>
-                    Button
-                </Button>
-                </CardBody>
-            </Card>
-            <Card>
-                <CardImg
-                alt="Card image cap"
-                src="https://picsum.photos/318/180"
-                top
-                width="100%"
-                />
-                <CardBody>
-                <CardTitle tag="h5">
-                    Card title
-                </CardTitle>
-                <CardSubtitle
-                    className="mb-2 text-muted"
-                    tag="h6"
+                  <div
+                    className="full-background"
+                    style={{ backgroundImage: `url(${bootstrapSite})`}}
+                  />
+                  <CardBody>
+                    <div className="content-bottom">
+                      
+                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                        <CardTitle tag="h3">A Spectrum of Approaches</CardTitle>
+                      </a>
+                    </div>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col lg="3">
+                <Card
+                  className="card-blog card-background"
+                  data-animation="zooming"
                 >
-                    Card subtitle
-                </CardSubtitle>
-                <CardText>
-                    This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
-                </CardText>
-                <Button>
-                    Button
-                </Button>
-                </CardBody>
-            </Card>
-            </CardGroup>
+                  <div
+                    className="full-background"
+                    style={{ backgroundImage: `url(${ReactNucampSite})`}}
+                  />
+                  <CardBody>
+                    <div className="content-bottom">
+                      
+                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                        <CardTitle tag="h3">Touch on a trend</CardTitle>
+                      </a>
+                    </div>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col lg="3">
+                <Card
+                  className="card-blog card-background"
+                  data-animation="zooming"
+                >
+                  <div
+                    className="full-background"
+                    style={{ backgroundImage: `url(${bootstrapSite})`}}
+                  />
+                  <CardBody>
+                    <div className="content-bottom">
+                      
+                      <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                        <CardTitle tag="h3">Self-Driving Cars</CardTitle>
+                      </a>
+                    </div>
+                  </CardBody>
+                </Card>
+              </Col>
+            </Row>
+          </Container>
+        </div>
         </div>
     );
 };
+    
+            
 
 export default Projects;

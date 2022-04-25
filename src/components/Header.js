@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <Container fluid > 
             
-        <Row className='header'>
+        <Row fluid className='header'>
             <div className='headBg' style={{ backgroundImage: `url(${headerBackground})`}}>
                 <div className='container'>
                     <div className='row justify-content-center'>

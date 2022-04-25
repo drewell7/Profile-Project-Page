@@ -14,7 +14,7 @@ const Bio = () => {
                     alt="..."
                     height="430"
                     src={familyPic}
-                    width="350"
+                    width="355"
                   />
                 </div>
               </Col>
