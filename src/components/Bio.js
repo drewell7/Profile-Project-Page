@@ -6,9 +6,10 @@ import { FaJs, FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaNodeJs } from "react-
 
 const Bio = () => {
     return (
+      
         <div className='bioSection'>
             <div className='aboutAndPic'>
-          <Container>
+            <Container fluid>
             <Row className="align-items-center">
               <Col lg="6">
                 <div className='family-holder'>
@@ -66,7 +67,7 @@ const Bio = () => {
               <Col lg="6">
                 <div>
                   <img
-                    className="certificate align-items-center"
+                    className="certificate align-items-center fluid"
                     alt="..."
                     height="430"
                     src={certificate}

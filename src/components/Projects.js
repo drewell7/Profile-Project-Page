@@ -6,7 +6,7 @@ import tracker from '../assets/img/expenseSite.png';
 
 const Projects = () => {
     return (
-        <div className='projects'>
+        <div className='projects container col-sm'>
             <div className="section blogs-2" id="blogs-2">
           <Container fluid>
           <div className='row justify-content-center'>
