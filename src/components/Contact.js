@@ -1,49 +1,72 @@
-import { Container, Row, Col, Card, CardBody } from 'reactstrap';
+import { Container, Row, Col, CardBody, Button } from 'reactstrap';
+import { BsEnvelope } from "react-icons/bs";
 
 const Contact = () => {
     return (
         <div className='contactSection'>
            <Container>
+             <Row>
+             <h2 className='contact-title'>Contact</h2>
+             </Row>
             <Row>
-              <Col md="5">
-                <h2 >Contact</h2>
-                <h4 className="description">
-                  You need more information? Check what other persons are saying
-                  about our product. They are very happy with their purchase.
-                </h4>
-                <div className="info info-horizontal">
-                  <div className="icon icon-primary">
-                    <i className="tim-icons icon-square-pin" />
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Find us at the office</h4>
+              <Col className="ml-auto mr-auto" md="5">
+                
+
+             
+                 
+                  <div className="contactCard">
+                    <CardBody>
+                    <h4 className="contactSubtitle">Call or Text</h4>
+                    <div className='phoneNumber'>
                     <p className="description">
-                      Bld Mihail Kogalniceanu, nr. 8, <br />
-                      7652 Bucharest, <br />
-                      Romania
+                      Cell Phone: <br />
+                      <a className='phoneLink' href='tel:+13853155788' >(385)315-5788 </a>
+                      
                     </p>
+                    </div>
+                    <h4 className='emailTitle'>Email</h4>
+                    <Button className="btn-round ml-1" color="danger" type="button" href='mailto:derekewell@gmail.com'>
+                <BsEnvelope />
+                derekewell@gmail.com
+              </Button>
+                    
+                    </CardBody>
                   </div>
-                </div>
-                <div className="info info-horizontal">
-                  <div className="icon icon-primary">
-                    <i className="tim-icons icon-mobile" />
-                  </div>
-                  <div className="description">
-                    <h4 className="info-title">Give us a ring</h4>
-                    <p className="description">
-                      Michael Jordan <br />
-                      +40 762 321 762 <br />
-                      Mon - Fri, 8:00-22:00
-                    </p>
-                  </div>
-                </div>
+                  
+
+
+
+
+              
               </Col>
               <Col className="ml-auto mr-auto" md="5">
-                <Card className="card-contact card-raised">
+                <div className="socialContactCard">
                   <CardBody>
-                    
+                    <div>
+                  <h4 className="contactSubtitle">Social</h4>
+                  </div>
+                  <div className='socialButtons'>
+                  <div>
+                  <Button color="facebook" href='https://www.facebook.com/derek.ewell/'>
+                  <i className="fab fa-facebook-square" />
+                  Connect with Facebook
+                </Button>
+                </div>
+                <br />
+                <div>
+                <Button color="linkedin" href='https://www.linkedin.com/in/derek-ewell'>
+                  <i className="fab fa-linkedin" />
+                  Connect with Linkedin
+                </Button>
+                </div>
+                <br />
+                <Button color="github" href='https://github.com/drewell7'>
+                  <i className="fab fa-github" />
+                  Connect with Github
+                </Button>
+                </div>
                   </CardBody>
-                </Card>
+                </div>
               </Col>
             </Row>
           </Container>

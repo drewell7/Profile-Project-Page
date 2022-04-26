@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Bio from './components/Bio.js';
 import Projects from './components/Projects.js';
 import Contact from './components/Contact.js';
+import Footer from './components/Footer.js';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Bio />
         <Projects />
         <Contact />
+        <Footer />
     </div>
   );
 }

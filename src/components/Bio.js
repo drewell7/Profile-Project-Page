@@ -1,14 +1,17 @@
 import { Container, Row, Col } from 'reactstrap';
 import familyPic from '../assets/img/Familyc.jpg';
+import certificate from '../assets/img/Bootcamp_Certificate.jpg';
+import { FaJs, FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaNodeJs } from "react-icons/fa";
+
 
 const Bio = () => {
     return (
         <div className='bioSection'>
-            
+            <div className='aboutAndPic'>
           <Container>
             <Row className="align-items-center">
               <Col lg="6">
-                <div>
+                <div className='family-holder'>
                   <img
                     className="family-image"
                     alt="..."
@@ -32,8 +35,47 @@ const Bio = () => {
               </Col>
             </Row>
           </Container>
+          </div>
           <div className='certCardSection'>
-          
+          <Container>
+            <Row className="align-items-center">
+              
+              <Col className="mt-md-5" lg="6">
+                
+                <h2 className="about">Skills</h2>
+                  <Row>
+                  
+                  <div className='skills-container'>
+                        <p className='description'>Tools of the trade. I started my coding journey at NuCamp but I continue to learn more and more every day. 
+                        I am proficient in each of these tools and I continue to add to my toolbox.</p>
+                    
+                  
+                    <div className='container-fluid'>
+                      
+                            <FaHtml5 className='htmlLogo' />
+                          
+                            <FaCss3Alt className='cssLogo' />
+                            <FaJs className='jsLogo' />
+                            <FaNodeJs className='nodeLogo' />
+                            <FaBootstrap className='bstrapLogo' />
+                            <FaReact className='reactLogo' />
+                        </div>
+                        </div>
+                </Row>
+              </Col>
+              <Col lg="6">
+                <div>
+                  <img
+                    className="certificate align-items-center"
+                    alt="..."
+                    height="430"
+                    src={certificate}
+                    width="355"
+                  />
+                </div>
+              </Col>
+            </Row>
+          </Container>
           </div>
         </div>
     );
