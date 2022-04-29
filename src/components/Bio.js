@@ -2,6 +2,7 @@ import { Container, Row, Col } from 'reactstrap';
 import familyPic from '../assets/img/Familyc.jpg';
 import certificate from '../assets/img/Bootcamp_Certificate.jpg';
 import { FaJs, FaHtml5, FaCss3Alt, FaBootstrap, FaReact, FaNodeJs } from "react-icons/fa";
+import { Fade } from "react-awesome-reveal";
 
 const Bio = () => {
     return (
@@ -25,14 +26,14 @@ const Bio = () => {
                 
                 <h2 className="about">About Me</h2>
                 <Row>
-                  
+                  <Fade>
                     <p className="description animate_animated animate_fadeIn">
                         Hello, I am a web developer focused on creating responsive, mobile first websites and apps.
                         I have graduated from the NuCamp Coding Bootcamp with a certificate in front-end web and mobile development. I completed classes in HTML, CSS and JavaScript, as well as Bootstrap, React and React Native.
                         When I am not coding I enjoy making music with Ableton and spending time with my family. My son and I love playing 
                         video games together and he's become a big Star Wars fan like his dad.
                     </p>
-                  
+                    </Fade>
                 </Row>
               </Col>
             </Row>
@@ -48,9 +49,10 @@ const Bio = () => {
                   <Row>
                   
                   <div className='skills-container'>
+                    <Fade>
                         <p className='description'>Tools of the trade. I started my coding journey at NuCamp but I continue to learn more and more every day. 
                         I am proficient in each of these tools and I continue to add to my toolbox.</p>
-                    
+                        </Fade>
                   
                     <div className='container-fluid'>
                       
