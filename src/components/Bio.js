@@ -26,12 +26,18 @@ const Bio = () => {
                 
                 <h2 className="about">About Me</h2>
                 <Row>
-                  <Fade>
-                    <p className="description animate_animated animate_fadeIn">
-                        Hello, I am a web developer focused on creating responsive, mobile first websites and apps.
-                        I have graduated from the NuCamp Coding Bootcamp with a certificate in front-end web and mobile development. I completed classes in HTML, CSS and JavaScript, as well as Bootstrap, React and React Native.
-                        When I am not coding I enjoy making music with Ableton and spending time with my family. My son and I love playing 
-                        video games together and he's become a big Star Wars fan like his dad.
+                  <Fade duration='2000'>
+                    <p className="description">
+                        Hello, I am a web developer focused on creating responsive,
+                        mobile first websites and apps.
+                        I have graduated from the NuCamp Coding Bootcamp
+                        with a certificate in front-end web and mobile development.
+                        I completed classes in HTML, CSS and JavaScript,
+                        as well as Bootstrap, React and React Native.
+                        When I am not coding I enjoy making music with Ableton
+                        and spending time with my family.
+                        My son and I love playing video games together
+                        and he's become a big Star Wars fan like his dad.
                     </p>
                     </Fade>
                 </Row>
@@ -49,13 +55,13 @@ const Bio = () => {
                   <Row>
                   
                   <div className='skills-container'>
-                    <Fade>
+                    <Fade duration='2000'>
                         <p className='description'>Tools of the trade. I started my coding journey at NuCamp but I continue to learn more and more every day. 
                         I am proficient in each of these tools and I continue to add to my toolbox.</p>
                         </Fade>
                   
                     <div className='container-fluid'>
-                      
+                     
                             <FaHtml5 className='htmlLogo' />
                           
                             <FaCss3Alt className='cssLogo' />
@@ -63,6 +69,7 @@ const Bio = () => {
                             <FaNodeJs className='nodeLogo' />
                             <FaBootstrap className='bstrapLogo' />
                             <FaReact className='reactLogo' />
+                         
                         </div>
                         </div>
                 </Row>

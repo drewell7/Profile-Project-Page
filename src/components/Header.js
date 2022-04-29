@@ -1,12 +1,14 @@
 import '../App.css';
 import headerBackground from '../../src/assets/img/background.jpg';
 import { Container, Row } from 'reactstrap';
+import { Fade } from "react-awesome-reveal";
 
 const Header = () => {
     return (
         <Container fluid > 
-            
+           
         <Row fluid className='header'>
+           <Fade duration='3000' triggerOnce>
             <div className='headBg' style={{ backgroundImage: `url(${headerBackground})`}}>
                 <div className='container'>
                     <div className='row justify-content-center'>
@@ -18,8 +20,9 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+            </Fade>
         </Row>
-        
+      
         </Container>
         
     );

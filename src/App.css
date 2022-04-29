@@ -23,9 +23,6 @@
 
 .headBg {
     display: flex;
-
-    
-    
     border-radius: 55px;
     align-items: center;
     filter: drop-shadow(0 0 2rem #EEF1F2 );
@@ -33,8 +30,6 @@
     
     height: 12rem;
     width: 40rem;
-    animation: fadeIn;
-    animation-duration: 3s;
 }
 
 .title {
@@ -58,10 +53,10 @@
 
 
 .bioSection {
-  
+    padding-top: 10rem;
     height: auto;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    margin-top: 5rem;
+   
     color: white;
 }
 
@@ -88,14 +83,14 @@
 }
 
 .aboutAndPic {
-  padding-bottom: 12rem;
-  height: 50rem;
+  
+  height: 40rem;
 }
 
 .certCardSection {
   margin-top: 5rem;
-  padding-top: 4rem;
-  height: 50rem;
+  padding-top: 8rem;
+  height: 55rem;
   background-image: url('./../src/assets/img/black-background.jpg');
   justify-content: center;
   align-items: center;
@@ -211,7 +206,8 @@
 .projectsTitle {
   color: white;
   font-size: 60px;
-  margin-bottom: 6rem;
+  margin-top: 4rem;
+  padding-bottom: 7rem;
   
 }
 
