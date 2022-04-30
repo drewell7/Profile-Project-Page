@@ -8,11 +8,14 @@ const Header = () => {
         <Container fluid > 
            
         <Row fluid className='header'>
+            <div>
            <Fade duration='3000' triggerOnce>
             <div className='headBg' style={{ backgroundImage: `url(${headerBackground})`}}>
                 <div className='container'>
                     <div className='row justify-content-center'>
-                        <h1 className='title'>Derek Ewell</h1>
+                        
+                            <h1 className='title'>Derek Ewell</h1>
+                        
                     </div>
                 
                     <div className='row justify-content-center'>
@@ -21,6 +24,7 @@ const Header = () => {
                 </div>
             </div>
             </Fade>
+            </div>
         </Row>
       
         </Container>

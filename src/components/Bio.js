@@ -82,6 +82,7 @@ const Bio = () => {
                     height="430"
                     src={certificate}
                     width="355"
+                   
                   />
                 </div>
               </Col>

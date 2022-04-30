@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
 
 .body {
     background-color:  #252422;
@@ -27,20 +28,26 @@
     align-items: center;
     filter: drop-shadow(0 0 2rem #EEF1F2 );
     justify-content: center;
-    
     height: 12rem;
     width: 40rem;
 }
 
+
+
 .title {
-    font-family: 'Alfa Slab One', cursive;
-    font-weight: 100;
-    font-size: 60px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 80px;
     text-align: center;
     align-items: center;
     margin: 0;
     padding: 0;
     color: white;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .title {
+      font-size: 50px;
+    }
   }
 
   .subtitle {
@@ -51,9 +58,9 @@
   }
 
 
-
 .bioSection {
     padding-top: 10rem;
+    
     height: auto;
     margin-top: 5rem;
    
@@ -71,7 +78,6 @@
 }
 
 
-
 .about {
   font-size: 40px;
   
@@ -83,14 +89,15 @@
 }
 
 .aboutAndPic {
-  
-  height: 40rem;
+  padding-bottom: 8rem;
+  height: 40rem auto;
 }
 
 .certCardSection {
   margin-top: 5rem;
   padding-top: 8rem;
-  height: 55rem;
+  padding-bottom: 6rem;
+  height: 55rem auto;
   background-image: url('./../src/assets/img/black-background.jpg');
   justify-content: center;
   align-items: center;
@@ -100,13 +107,17 @@
   justify-content: center;
   align-items: center;
   
+  height: auto;
 }
 
 .certificate {
   justify-content: center;
   align-items: center;
-  margin: 5rem;
+  
   box-shadow: 1px 1px 20px 2px black;
+  display: block;
+  margin: 5rem auto;
+  max-width: 100%;
 }
 
 .cssLogo {
@@ -170,6 +181,7 @@
   height: auto;
   width: 100%;
   padding-top: 5rem;
+  padding-bottom: 6rem;
 }
 
 .contact-title {
